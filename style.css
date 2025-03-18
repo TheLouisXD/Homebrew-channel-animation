@@ -35,7 +35,7 @@ body {
 
 .logo-text .bottom{
     font-size: 60px;
-    align-self: flex-end; /* Añadir esta línea */
+    align-self: flex-end; /* Añadir esta línea para poner el texto a la derecha */
 }
 
 .bubble-container {
@@ -98,5 +98,35 @@ body {
     100% {
         transform: translateY(-100vh);
         opacity: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .logo-text{
+        font-size: 50px;
+    }
+
+    .logo-text .top,
+    .logo-text .bottom{
+        font-size: 30px;
+    }
+
+    .logo-text .middle{
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-text{
+        font-size: 30px;
+    }
+
+    .logo-text .top,
+    .logo-text .bottom{
+        font-size: 20px;
+    }
+
+    .logo-text .middle{
+        font-size: 25px;
     }
 }
