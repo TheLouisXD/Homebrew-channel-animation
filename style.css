@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background: linear-gradient(to bottom, #397993, #4a9ebb);
+    height: 100vh;
+}
+
+.logo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo-text{
+    display: flex;
+    flex-direction: column;
+    font-size: 100px;
+    line-height: 0.9; /* Esto sirve para modificar el espacio entre lineas */
+}
+
+.logo-text .top{
+    font-size: 60px;
+}
+
+.logo-text .middle{
+    font-weight: 900;
+}
+
+.logo-text .bottom{
+    font-size: 60px;
+    align-self: flex-end; /* Añadir esta línea */
+}
+
+.bubble-container {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.bubble {
+    position: absolute;
+    bottom: -100px;
+    width: 50px;
+    height: 50px;
+    animation: rise 5s infinite ease-in;
+}
+
+.bubble:nth-child(2) {
+    left: 20%;
+    width: 60px;
+    height: 60px;
+    animation-duration: 7s;
+}
+
+.bubble:nth-child(3) {
+    left: 40%;
+    width: 55px;
+    height: 55px;
+    animation-duration: 6s;
+}
+
+.bubble:nth-child(4) {
+    left: 60%;
+    width: 70px;
+    height: 70px;
+    animation-duration: 8s;
+}
+
+.bubble:nth-child(5) {
+    left: 80%;
+    width: 45px;
+    height: 45px;
+    animation-duration: 4s;
+}
+
+.bubble:nth-child(5) {
+    left: 90%;
+    width: 80px;
+    height: 80px;
+    animation-duration: 10s;
+}
+
+
+@keyframes rise {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100vh);
+        opacity: 0;
+    }
+}
